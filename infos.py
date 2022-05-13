@@ -117,7 +117,7 @@ def createFilesMsg(evfiles):
     return msg
 def createStat(username,userdata,isadmin):
     from pyobigram.utils import sizeof_fmt
-    msg = '⚙️Condiguraciones De Usuario⚙️\n\n'
+    msg = '⚙️Configuraciones de Usuario⚙️\n\n'
     msg+= '➤Nombre: @' + str(username)+'\n'
     msg+= '➤User: ' + str(userdata['moodle_user'])+'\n'
     msg+= '➤Password: ' + str(userdata['moodle_password'])+'\n'
@@ -129,7 +129,7 @@ def createStat(username,userdata,isadmin):
     if userdata['cloudtype'] == 'cloud':
         msg+= '➤Dir: /' + str(userdata['dir'])+'\n'
     msg+= '➤Tamaño de Zip : ' + sizeof_fmt(userdata['zips']*1024*1024) + '\n\n'
-    msgAdmin = 'No'
+    msgAdmin = 'Si'
     if isadmin:
         msgAdmin = 'Si'
     msg+= '➤Admin : ' + msgAdmin + '\n'
