@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup
 from ProxyCloud import ProxyCloud
 
 import socket
-import socks
+
 
 import S5Crypto
 
