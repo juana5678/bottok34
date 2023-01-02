@@ -13,7 +13,7 @@ import uuid
 import time
 from ProxyCloud import ProxyCloud
 import socket
-import socks
+
 import asyncio
 
 import threading
